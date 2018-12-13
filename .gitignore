@@ -1,0 +1,6 @@
+.idea
+*.exe
+*.imp
+*.zip
+*.class
+target

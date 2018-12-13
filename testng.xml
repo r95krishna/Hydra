@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Default Suite">
+
+    <test name="Hydra">
+
+        <parameter name="browser" value="chrome"/>
+        <parameter name="url" value="hr.greytip.com"/>
+        <parameter name="username" value="780"/>
+        <parameter name="password" value="Rahul@123"/>
+
+        <classes>
+            <class name="biz.gr8hr.gthydra.test1.pages.loginPage"/>
+        </classes>
+
+
+    </test> <!-- Hydra -->
+</suite> <!-- Default Suite -->
