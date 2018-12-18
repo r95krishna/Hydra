@@ -22,12 +22,9 @@ public class loginPageTest extends TestBase {
 
     @BeforeMethod
     public void Setup() {
-
         testUtils = new TestUtils();
         loginPage = new loginPage();
-
     }
-
 
     @DataProvider
     public Iterator<Object[]> getData() {
@@ -66,13 +63,11 @@ public class loginPageTest extends TestBase {
         Assert.assertEquals(verifyloginicon, true, "logo icon is present");
     }
 
-
     @Test(priority = 5)
     public void SignInButtonTest() {
         boolean signInbutton = loginPage.verifySignInButton();
         Assert.assertEquals(signInbutton, true, " Sign in button is displayed");
     }
-
 
     @Test(priority = 6)
     public void forgetLinkTest() {
@@ -84,4 +79,5 @@ public class loginPageTest extends TestBase {
     public void TearDown() {
         driver.close();
     }
+
 }
